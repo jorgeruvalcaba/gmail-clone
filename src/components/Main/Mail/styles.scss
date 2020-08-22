@@ -1,0 +1,113 @@
+.mail {
+  color: #202124;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 10px 0;
+  border: 1px solid #fff;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #f1f3f4;
+
+  &:hover {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0,
+      0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    z-index: 1;
+    cursor: pointer;
+
+    .mail__actions {
+      display: block;
+      color: #5f6368;
+      display: flex;
+      flex-basis: 15%;
+      justify-content: space-evenly;
+      align-self: center;
+      font-size: 17px;
+      padding-right: 1rem;
+    }
+
+    .mail__date {
+      display: none;
+    }
+  }
+
+  &__sender {
+    &:first-child {
+      margin-right: 1rem;
+    }
+
+    display: flex;
+    flex-basis: 25%;
+    min-width: 25%;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    input {
+      display: block;
+      margin-right: 1rem;
+    }
+
+    svg {
+      color: rgba(0, 0, 0, 0.1);
+      align-self: center;
+      font-size: 15px;
+      padding-right: 1rem;
+      cursor: pointer;
+    }
+
+    .title {
+      margin-right: 2rem;
+      font-size: 15px;
+      letter-spacing: 0.2px;
+      font-weight: 500;
+    }
+  }
+
+  &__content {
+    flex-basis: 50%;
+    flex-grow: 1;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    text-align: start;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+
+    &__subject__subtext {
+      width: 100%;
+      font-weight: 400;
+      color: #5f6368;
+    }
+  }
+
+  &__actions {
+    color: #5f6368;
+    display: flex;
+    flex-basis: 15%;
+    justify-content: space-evenly;
+    align-self: center;
+    font-size: 17px;
+    padding-right: 1rem;
+    display: none;
+  }
+
+  &__date {
+    flex-basis: 13%;
+    font-size: 13px;
+    font-weight: bold;
+    padding-right: 1rem;
+    padding-left: 2rem;
+  }
+}

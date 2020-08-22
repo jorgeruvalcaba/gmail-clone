@@ -1,0 +1,88 @@
+.sidebar {
+  flex: 0.15;
+  flex-flow: column nowrap;
+  letter-spacing: 0.2px;
+  position: sticky;
+  top: 10vh;
+  height: 560px;
+  font-size: 0.875rem;
+
+  &__compose {
+    margin: 1rem 0 0 0;
+    padding-left: 0.5rem;
+    height: 12%;
+
+    &__button a {
+      text-decoration: none;
+      color: #575757;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      width: 50%;
+      min-width: 130px;
+      flex-flow: row nowrap;
+      justify-content: center;
+      text-align: center;
+      padding: 0.5rem 0.3rem;
+      border-radius: 25px;
+      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+        0 1px 3px 1px rgba(60, 64, 67, 0.149);
+
+      img {
+        width: 32px;
+        height: 32px;
+        margin-left: -13px;
+        margin-right: 10px;
+      }
+
+      p {
+        margin-top: 5px;
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  &__tags {
+    height: 80%;
+    overflow: hidden;
+    line-height: 1.6rem;
+    margin-right: 1rem;
+
+    &:hover {
+      overflow-y: scroll;
+      overflow: hidden;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      color: #818181;
+      padding: 3px;
+      width: 100%;
+      padding-left: 1.6rem;
+      font-size: 14px;
+      min-width: 210px;
+    }
+
+    a:hover:not(.active) {
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 0 25px 25px 0;
+      width: 85%;
+    }
+
+    .active {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: #d93025;
+      width: 87%;
+      font-weight: bold;
+      background: rgb(252, 232, 230);
+      border-radius: 0 25px 25px 0;
+
+      span {
+        color: #d93025;
+      }
+    }
+  }
+}

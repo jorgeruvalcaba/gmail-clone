@@ -1,0 +1,10 @@
+.App {
+  line-height: 1.6;
+  color: #202124;
+
+  .app__page {
+    display: flex;
+    width: 100% !important;
+    position: fixed;
+  }
+}

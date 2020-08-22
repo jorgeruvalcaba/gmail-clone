@@ -1,0 +1,35 @@
+.tabItem {
+  width: 253px;
+  height: 100%;
+  color: #5f6368;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background: #fff;
+  overflow: hidden;
+  font-size: 0.875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  float: none;
+  margin: 0;
+
+  &:hover {
+    background-color: rgba(32, 33, 36, 0.059);
+  }
+
+  &.active {
+    color: #d93025;
+    border-bottom: 3px solid #d93025;
+    padding-left: 1rem;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+    font-size: 15px;
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

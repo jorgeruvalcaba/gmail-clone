@@ -1,0 +1,58 @@
+.main {
+  flex: 0.85;
+  width: 100%;
+  height: 100%;
+
+  &__contentNav {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 87%;
+    height: 50px;
+    position: sticky;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &__leftIcons {
+      color: #7c7c7c;
+      font-size: 13px;
+      display: flex;
+      width: 14%;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &__rightIcons {
+      font-size: 14px;
+      color: rgb(122, 122, 122);
+      width: 14%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 2.2rem;
+    }
+  }
+
+  &__mailbox {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+
+    &__tabs {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+}
